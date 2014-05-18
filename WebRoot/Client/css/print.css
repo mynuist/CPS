@@ -1,0 +1,274 @@
+.all_entry{
+	
+  width:auto;
+  height:auto;
+}
+.entry {
+	width:100%; 
+	height:295px;
+	border-color:red;
+	border:3px;
+	overflow:auto;
+	border: 1px solid #000000; 
+	margin-top:10px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	}
+
+
+
+.font1 {
+		/*font-weight:bold;*/
+		font-size:15px
+}	
+
+.font2 {
+		color:white;
+		font-weight:bold;
+		font-size:15px
+}	
+
+.font3 {
+		font-size:13px
+}	
+
+.part1 {
+	width:300px; height:290px;
+	float:left; display:inline;
+}
+
+.part2 {
+	width:300px; height:290px;
+	float:left; display:inline;
+}
+
+.part3 {
+	width:300px; height:290px;
+	float:left; display:inline;
+}
+
+.line {
+	margin-top:7px;margin-left:0px;
+	width: 1px;
+  height: 280px;
+  background: gray;
+	float:left; display:inline;
+}
+
+
+.part1_1 {
+	width:245px; height:20px;
+	margin-top:16px;margin-left:16px;
+	float:left; display:inline;
+}
+
+.print_source_type {
+	margin-left:10px;
+}
+
+.part1_2 {
+	width:250px; height:50px;
+	margin-top:16px;margin-left:6px;
+	float:left; display:inline;
+}
+
+.reupload {
+	cursor:pointer;
+	width:220px;border:none;
+	margin-left:6px;margin-top:6px;
+	background-color:#FF6600; height:40px;	
+}
+
+.part1_3 {
+	width:250px; height:80px;
+	margin-top:8px;margin-left:6px;
+	float:left; display:inline;
+}
+
+.file_type {
+			width:75px; height:70px;
+			margin-top:0px;margin-left:0px;
+			float:left; display:inline;
+}
+
+.file_name {
+		width:160px; height:50px;
+		margin-top:20px;margin-left:0px;
+		float:left; display:inline;
+		font-size:14px;
+		font-weight:bold;
+}
+
+.file_info {
+		width:100px; height:50px;
+		margin-top:0px;margin-left:20px;
+		float:left; display:inline;
+		font-size:14px;
+}
+
+
+.part1_4_1 {
+		width:100px; height:10px;
+		margin-top:0px;margin-left:0px;margin-bottom:5px;
+		font-size:15px;
+}
+
+.part1_4_2 {
+		width:100px; height:10px;
+		margin-top:10px;margin-left:0px;
+		font-size:14px;
+}
+
+/*part 2*/
+.part2_1 {
+		width:245px; height:20px;
+		margin-top:20px;margin-left:8px;
+		float:left; display:inline;
+		font-size:15px
+	}
+	
+.printA4 {
+		width:240px; height:240px;
+		margin-top:5px;margin-left:16px;
+		float:left; display:inline;
+	}
+
+.checkbox {
+		margin-left:20px;
+	}
+	
+.A4_1 {
+		width:220px; height:20px;
+		margin-top:7px;margin-left:5px;
+}
+
+.A4_2 {
+		width:220px; height:20px;
+		margin-top:7px;margin-left:5px;
+}
+.A4_3 {
+		width:220px; height:20px;
+		margin-top:7px;margin-left:5px;
+}
+
+.A4_4 {
+		width:220px; height:20px;
+		margin-top:7px;margin-left:5px;
+}
+
+.A4_5 {
+		width:220px; height:20px;
+		margin-top:7px;margin-left:5px;
+		float:left; 
+}
+
+.A4_6 {
+		width:220px; height:20px;
+		margin-top:7px;margin-left:5px;
+		clear:both;
+		
+}
+
+.A4_7 {
+		width:220px; height:20px;
+		margin-top:3px;margin-left:5px;
+}
+
+
+.A4_2 select {
+		margin-left:7px;
+}
+
+/*part3*/
+.part3_1 {
+		width:100px; height:20px;
+		margin-top:20px;margin-left:8px;
+		float:left; display:inline;
+		font-size:15px
+	}
+	
+	
+.part3_2 {
+		width:250px; height:90px;
+		margin-top:10px;margin-left:8px;
+		float:left; display:inline;
+		font-size:15px;
+		/*border:1 solid gray;*/
+		border: 1px solid #000000; 
+	}
+	
+.part3_2_all {
+		width:240px; height:20px;
+		margin-top:10px;margin-left:5px;
+		float:left; display:inline;
+		font-size:15px;
+	}
+	
+.part3_3 {
+		width:250px; height:90px;
+		margin-top:15px;margin-left:8px;
+		float:left; display:inline;
+		font-size:15px;
+		border: 1px solid #000000; 
+	}
+
+.part3_3_all {
+		width:240px; height:20px;
+		margin-top:10px;margin-left:5px;
+		float:left; display:inline;
+		font-size:15px;
+	}
+	
+.buy_btn {
+		cursor:pointer;;
+		color:white;
+		font-weight:bold;
+		font-size:17px
+		cursor:pointer;
+		width:120px;border:none;
+		margin-left:31px; 
+		background-color:#FF6600; height:20px;	
+
+}
+
+.money {
+font-size:18px;font-weight:bold;color:#D94600
+}
+
+.info_into {
+cursor:pointer;
+font-size:12px;margin-left:3px;color:#C6A300;font-weight:bold;text-decoration:underline;
+}
+	
+.part3_4 {
+		width:250px; height:20px;
+		margin-top:10px;margin-left:8px;
+		float:left; display:inline;
+		font-size:15px;
+	}
+
+.close {
+		cursor:pointer;
+		margin-left:242px;margin-top:3px;
+		width:29px; height:28px;
+		background-image:url('./../img/delete.png')
+}
+
+.wenhao {
+cursor:pointer;
+width:20px;height:20px;margin-left:180px;; background-image:url('./../img/wenhao.png')
+}
+
+/*add btn*/
+.add_btn {
+		cursor:pointer;
+		color:white;
+		font-weight:bold;
+		font-size:17px
+		cursor:pointer;
+		width:120px;border:none;
+		margin-left:2px; margin-top:10px;
+		background-color:#FF6600; height:20px;	
+
+}

@@ -1,0 +1,32 @@
+body{margin:0px;padding:0px;font-family:'微软雅黑';}
+#order_field{width:100%;}
+#order_top_index{width:100%;height:36px;background-color:#ddd;}
+#order_top_index a{text-decoration:none;display:block;width:120px;height:30px;float:left;font-size:13px;line-height:30px;vertical-align:middle;text-align:center;margin-left:10px;margin-top:3px;color:#333;}
+#order_ctnt_field{width:100%;font-size:13px;margin:10px;color:#666;}
+
+.luyu_user_center_account_title{font-size:20px;color:#ccc;border-bottom:3px dashed #eee;}
+.luyu_user_center_account_table{font-size:16px;color:#666;}
+.luyu_user_center_account_table_label{width:80px;border-left:0px solid #eee;}
+.luyu_user_center_account_table_text{width:240px;border-bottom:1px solid #f6f6f6;}
+.luyu_user_center_account_table_text_1{width:540px;border-bottom:1px solid #f6f6f6;}
+.luyu_user_center_account_table a{float:left;display:block;width:120px;height:32px;line-height:32px;vertical-align:middle;margin-left:10px;text-decoration:none;border:1px solid #ccc;background-color:#eee;text-align:center;color:#F07C22;}
+.luyu_user_center_account_table a:hover{font-weight:bold;}
+
+
+#order_ctnt_list{margin:40px;margin-top:24px;background-color:#F0F5F8;font-size:13px;}
+.list_outline{margin-left:-1px;margin-top:-1px;width:100%;padding-top:10px;padding-bottom:10px;border:1px solid #ddd;color:#666;font-size:13px;}
+
+.order_ctnt_list_item{width:100%;height:24px;margin-top:-1px;margin-left:-1px;border:1px solid #ddd;color:#666;font-size:13px;}
+.order_ctnt_list_item_1{width:100%;margin-left:0px;color:#666;font-size:13px;}
+
+.order_ctnt_list_item_top_1{float:left;height:100%;width:196px;line-height:24px;vertical-align:middle;text-align:center;}
+.order_ctnt_list_item_top_2{float:left;height:100%;width:372px;line-height:24px;vertical-align:middle;text-align:center;}
+.order_ctnt_list_item_top_3{float:left;height:100%;width:139px;line-height:24px;vertical-align:middle;text-align:center;}
+.order_ctnt_list_item_top_4{float:left;height:100%;width:96px;line-height:24px;vertical-align:middle;text-align:center;}
+.order_ctnt_list_item_top_5{float:left;height:100%;width:97px;line-height:24px;vertical-align:middle;text-align:center;}
+
+.order_ctnt_list_item_clm_1{width:164px;line-height:24px;vertical-align:middle;text-align:center;}
+.order_ctnt_list_item_clm_2{width:310px;line-height:24px;vertical-align:middle;text-align:left;}
+.order_ctnt_list_item_clm_3{width:116px;line-height:24px;vertical-align:middle;text-align:center;}
+.order_ctnt_list_item_clm_4{width:80px;line-height:24px;vertical-align:middle;text-align:center;}
+.order_ctnt_list_item_clm_5{width:80px;line-height:24px;vertical-align:middle;text-align:center;}

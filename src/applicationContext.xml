@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:dwr="http://www.directwebremoting.org/schema/spring-dwr"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd 
+	http://www.springframework.org/schema/tx 
+	http://www.springframework.org/schema/tx/spring-tx-2.5.xsd 
+	http://www.springframework.org/schema/context 
+	http://www.springframework.org/schema/context/spring-context-2.5.xsd
+	http://www.directwebremoting.org/schema/spring-dwr   
+    http://www.directwebremoting.org/schema/spring-dwr-2.0.xsd">
+
+
+<context:annotation-config />
+	<tx:annotation-driven transaction-manager="transactionManager" />
+
+	<bean id="transactionManager"
+        class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+        <property name="sessionFactory">
+            <ref local="sessionFactory" />
+        </property>
+    </bean>
+	
+		
+
+	<import resource="classpath:US/CPS/dao/applicationContext-dao.xml"/>
+	<import resource="classpath:US/CPS/service/applicationContext-service.xml"/>
+	
+
+
+	<!-- hibernate -->
+	<bean id="dataSource"
+		class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName"
+			value="com.mysql.jdbc.Driver">
+		</property>
+		<property name="url" value="jdbc:mysql://localhost:3306/cps"></property>
+		<property name="username" value="root"></property>
+		<property name="password" value="123456"></property>
+	</bean>
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">
+					org.hibernate.dialect.MySQLDialect
+				</prop>
+			</props>
+		</property>
+		<property name="mappingResources">
+			<list>
+				<value>US/CPS/entity/account/Account.hbm.xml</value>
+				<value>US/CPS/entity/userinfo/Userinfo.hbm.xml</value>
+				<value>US/CPS/entity/dom/Dom.hbm.xml</value>
+				<value>US/CPS/entity/bill/Bill.hbm.xml</value>
+				<value>US/CPS/entity/building/Building.hbm.xml</value>
+				<value>
+					US/CPS/entity/chargemoney/Chargemoney.hbm.xml
+				</value>
+				<value>US/CPS/entity/district/District.hbm.xml</value>
+				<value>US/CPS/entity/logs/Logs.hbm.xml</value>
+				<value>US/CPS/entity/orders/Orders.hbm.xml</value>
+				<value>US/CPS/entity/paycard/Paycard.hbm.xml</value>
+				<value>US/CPS/entity/printshop/Printshop.hbm.xml</value>
+				<value>US/CPS/entity/printtask/Printtask.hbm.xml</value>
+				<value>US/CPS/entity/school/School.hbm.xml</value>
+				<value>
+					US/CPS/entity/university/University.hbm.xml
+				</value>
+				<value>US/CPS/entity/major/Major.hbm.xml</value></list>
+		</property></bean>
+		<!-- 
+	<bean id="AccountDAO" class="US.CPS.dao.impl.AccountDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="UserinfoDAO" class="US.CPS.dao.impl.UserinfoDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="DomDAO" class="US.CPS.dao.impl.DomDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="BillDAO" class="US.CPS.dao.impl.BillDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="BuildingDAO" class="US.CPS.dao.impl.BuildingDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="ChargemoneyDAO"
+		class="US.CPS.dao.impl.ChargemoneyDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="DistrictDAO" class="US.CPS.dao.impl.DistrictDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="LogsDAO" class="US.CPS.dao.impl.LogsDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="OrdersDAO" class="US.CPS.dao.impl.OrdersDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="PaycardDAO" class="US.CPS.dao.impl.PaycardDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="PrintshopDAO"
+		class="US.CPS.dao.impl.PrintshopDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="PrinttaskDAO"
+		class="US.CPS.dao.impl.PrinttaskDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="SchoolDAO" class="US.CPS.dao.impl.SchoolDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="UniversityDAO"
+		class="US.CPS.dao.impl.UniversityDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="MajorDAO" class="US.CPS.dao.impl.MajorDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	 -->
+	</beans>

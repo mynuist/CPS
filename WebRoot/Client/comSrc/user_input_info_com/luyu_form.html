@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/messages.css">
+		<script type="text/javascript" src="common/jquery.js"></script>
+		<script type="text/javascript" src="js/luyu_valid.js"></script>
+	</head>
+	<body>
+	
+	
+		<div id="luyu_valid_form_field">
+			<form name="form" id="form" class="luyu_valid_form" action="" onsubmit="return validate(this)" method="post">
+				<div>
+					<span class="luyu_valid_form_required_field1">注：标</span>
+					<span class="luyu_valid_form_required_field">*</span>
+					<span class="luyu_valid_form_required_field1">选项为必填项 </span>
+				</div>
+				<div>
+					<label for="school">所在学校:</label> 
+					<select class="luyu_valid_form_select" name="school" id="school">
+						<option value="">请选择您所在的学校</option>
+						<option value="1">南京信息工程大学</option>
+						<option value="2">南京大学</option>
+					</select>
+					<span class="luyu_valid_form_required_field">*</span>
+				</div>
+				<div>
+					<label for="school_area">校区:</label>
+					<select class="luyu_valid_form_select" name="school_area" id="school_area">
+						<option value="">请选择您所在的校区</option>
+						<option value="1">东苑</option>
+						<option value="2">中苑</option>
+						<option value="3">滨江学院</option>
+					</select>
+					<span class="luyu_valid_form_required_field">*</span>
+				</div>
+				<div>
+					<label for="realname">真实姓名:</label>
+					<input class="luyu_valid_form_text" type="text" name="realname" id="realname">
+					<span class="luyu_valid_form_required_field">*</span>
+				</div>
+				<div>
+					<label for="nickname">昵称:</label>
+					<input class="luyu_valid_form_text" type="text" name="nickname" id="nickname">
+					<span class="luyu_valid_form_required_field">*</span>
+				</div>
+				<div>
+					<label for="sex">性别:</label>
+					<input type="radio" class="luyu_valid_form_radio" name="sex" value="male"> 
+					<span class="luyu_valid_form_radio_label">男</span>
+					<input type="radio" class="luyu_valid_form_radio" name="sex" value="female"> 
+					<span class="luyu_valid_form_radio_label">女</span>
+				</div>
+
+				<div>
+					<label for="stu_num">学号:</label>
+					<input class="luyu_valid_form_text" type="text" name="stu_num" id="stu_num">
+					<span class="luyu_valid_form_required_field">*</span>
+				</div>
+
+				<div>
+					<label for="depart">学院:</label>
+					<input class="luyu_valid_form_text" type="text" name="depart" id="depart">
+					<span class="luyu_valid_form_required_field">*</span>
+				</div>
+
+				<div>
+					<label for="major">专业:</label>
+					<input class="luyu_valid_form_text" type="text" name="major" id="major">
+					<span class="luyu_valid_form_required_field">*</span>
+				</div>
+
+				<div>
+					<label for="class_num">班级:</label>
+					<input class="luyu_valid_form_text" type="text" name="class_num" id="class_num">
+					<span class="luyu_valid_form_required_field">*</span>
+				</div>
+
+				<div>
+					<label for="qq_num">QQ:</label>
+					<input class="luyu_valid_form_text" type="text" name="qq_num" id="qq_num">
+					<span class="luyu_valid_form_required_field">*</span>
+				</div>
+				<div>
+					<label for="tele_num">手机号码:</label>
+					<input class="luyu_valid_form_text" type="text" name="tele_num" id="tele_num">
+					<span class="luyu_valid_form_required_field">*</span>
+				</div>
+				<div>
+					<label for="email">联系邮箱:</label>
+					<input class="luyu_valid_form_text" type="text" name="email" id="email">
+					<span class="luyu_valid_form_required_field">*</span>
+				</div>
+				<div>
+					<label for="dorm_biulding">宿舍楼:</label>
+					<select class="luyu_valid_form_select" name="dorm_biulding" id="dorm_biulding">
+						<option value="">请选择您的宿舍楼</option>
+						<option value="1">硕园E</option>
+						<option value="2">硕园B</option>
+						<option value="3">硕园A</option>
+					</select>
+					<span class="luyu_valid_form_required_field">*</span>
+				</div>
+				<div>
+					<label for="room_num">宿舍号:</label>
+					<select class="luyu_valid_form_select" name="room_num" id="room_num">
+						<option value="">请选择您的宿舍号</option>
+						<option value="1">327</option>
+						<option value="2">322</option>
+						<option value="3">329</option>
+					</select>
+					<span class="luyu_valid_form_required_field">*</span>
+				</div>
+
+				<input type="submit" value="保 存" class="submit">
+			</form>
+		</div>
+
+		
+	</body>
+</html>
