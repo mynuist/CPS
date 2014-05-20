@@ -55,7 +55,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
               </div>
         </div>
    </div>
-  <!-- this is a test for git --> 
+  <!-- this is a test for git2 --> 
    
       <jsp:include page="../Client/htmlSrc/tail.html"></jsp:include>
    
