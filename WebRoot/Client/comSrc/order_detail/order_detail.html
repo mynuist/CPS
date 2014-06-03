@@ -1,0 +1,178 @@
+<html>
+	<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+	<head>
+		<link rel="stylesheet" type="text/css" href="order_detail.css">
+		<link href="jquery-ui.css" rel="stylesheet" type="text/css"/>
+		<script src="jquery.min.js"></script>
+		<script src="jquery-ui.js"></script>
+		 <script>
+			$(document).ready(function() {
+				$("#datepicker").datepicker();
+			});
+  </script>
+	</head>
+	<body style="width:980px;margin-left:0px">
+		<div id="all_entry">
+			<div class="entry">
+				<div class="part1">
+					<div class="p1_1">
+						<span>订单详情</span>
+					</div>
+					<div class="line"></div>
+					<table style="margin-top:0px">
+						<td class="p1_2_1">
+							<div  class="ordinary">
+								<span class="ordinary">所购打印产品列表</span><br/>
+								<span class="ordinary">1.文档(A4):DOC文档  /  封面</span><br/>
+								<span class="ordinary">2.海报:海报 1 份(高900/宽1200)</span><br/>
+							</div>
+						</td>
+						<td>
+							<div >
+								<span  class="feiyong">费用：</span>
+								<span class="money">162.4</span>
+								<span  class="feiyong">元</span>
+							</div>
+						
+						</td>
+					</table>
+				</div>
+				<div class="part1">
+					<div class="p1_1">
+						<span>需求时间</span>
+					</div>
+					<div class="line"></div>
+					<div style="margin-top:10px;float:left; display:inline;">
+						<span  class="ordinary">日期:</span>
+						<input type="text" id="datepicker" width="100px"></input>
+						<span  class="ordinary">上/下午</span>
+						<select>
+							<option>---请选择需要时间---</option>
+							<option>上午</option>
+							<option>下午</option>
+						</select>
+					</div>
+				</div>
+				<div class="part1">
+					<div class="float">
+						<div class="method p1_1">
+							<input type="checkbox" class="checkbox" checked="checked"> 上门自取</input>
+						</div>
+						<div class="H_line" ></div>
+						<div class="float" style="margin-top:13px">
+							<span  class="feiyong">费用：</span>
+							<span class="money">0</span>
+							<span  class="feiyong">元</span>
+						</div>
+					</div>
+					<div class="line"></div>
+					<div>
+						<div class="p3_1">
+							<span>设置取货点</span>
+						</div>
+						<div class="line"></div>
+						<div class="p3_2 float" style="width:970px">
+						<div class="float" style="margin-top:10px;margin-bottom:10px">
+							<span  class="ordinary">学校:</span>
+							<input type="text"  value="南京信息工程大学"></input>
+							<span  class="ordinary">区域:</span>
+							<select>
+								<option>---请选择打印区域---</option>
+								<option>东苑</option>
+								<option>中苑</option>
+								<option>西苑</option>
+							</select>
+							
+							<span  class="ordinary">打印店:</span>
+							<select>
+								<option>---请选择打印店---</option>
+								<option>晨光打印店</option>
+								<option>QQ打印店</option>
+							</select>
+						</div>
+						<div class="float" style="margin-top:10px;margin-bottom:10px;margin-right:45px" >
+							<input type="button" class="buy_btn"  value="设为默认取货点"></input>
+						</div>
+						</div>
+						
+						<div class="line"></div>
+						<div class="float">
+							<div class="method p1_1">
+								<input type="checkbox" class="checkbox" > 宅急印</input>
+								<span class="meto">(您本次消费超过20元，免费送货上门)</span>
+							</div>
+							<div class="H_line" ></div>
+							<div class="float" style="margin-top:13px">
+								<span class="feiyong">费用：</span>
+								<span class="money">0</span>
+								<span  class="feiyong">元</span>
+							</div>
+						</div>
+						<div class="line"></div>
+						<div class="p3_1">
+							<span>送货地址</span>
+						</div>
+						<div class="line"></div>
+						
+						<div class="address">
+							<div class="exist_address ordinary">
+								<input type="radio" name="address" checked="checked">我的宿舍:</input>
+								<span>南京信息工程大学东苑硕园D栋322 </span>
+							</div>
+							<div class="exist_address ordinary">
+								<input type="radio" name="address">历史地址-1:</input>
+								<span>南京信息工程大学东苑硕园D栋322 </span>
+							</div>
+							<div class="ordinary">
+								<input type="radio" name="address">新增地址</input>
+							</div>
+							<div class="other_address">
+								<div>
+									<span class="ordinary">联系人：</span> <input type="text" width=30px style="margin-left:15px"></input>
+								</div>
+								<div>
+									<span class="ordinary">电话：</span><input type="text" width=30px style="margin-left:39px"></input>
+								</div>
+								<div >
+									<span class="ordinary">详细地址</span><br/>
+									<span class="ordinary">学校:</span><input type="text" width=30px style="margin-left:47px" value="南京信息工程大学"></input>  
+									<span class="ordinary">区域:</span>
+									<select>
+										<option>---请选择打印区域---</option>
+										<option>东苑</option>
+										<option>中苑</option>
+										<option>西苑</option>
+									</select>
+									<span class="ordinary">宿舍或教室地址:</span><input type="text" width=30px style="margin-left:39px"></input>
+								</div>
+								
+							</div>
+							
+							<div>
+								<input type="button" class="buy_btn2" style="margin-top:11px;margin-bottom:14px;margin-left:15px"  value="添加到到我的常用地址"></input>
+							</div>
+							
+						<div>
+					</div>
+				</div>
+			</div>	
+		</div>
+	
+		</div>
+		
+			<div class="part2">
+					
+			<div style="float:right;">
+				<span  class="feiyong2">总费用：</span>
+				<span class="money">100</span>
+				<span  class="feiyong2">元</span>
+				<br/>
+				<input type="button" class="buy_btn3" style="margin-top:31px;margin-right:0px"  value="付款"></input>
+			</div>
+			</div>
+			
+	</body>
+
+
+
+</html>
