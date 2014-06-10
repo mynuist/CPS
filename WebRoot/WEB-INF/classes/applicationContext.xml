@@ -32,7 +32,7 @@
 		
 
 	<import resource="classpath:US/CPS/dao/applicationContext-dao.xml"/>
-	<import resource="classpath:US/CPS/service/applicationContext-service.xml"/>
+	<import resource="classpath:US/CPS/BusinessLayer/Services/applicationContext-service.xml"/>
 
 
 	<!-- hibernate -->
@@ -169,11 +169,13 @@
 				<ref bean="sessionFactory" />
 			</property>
 		</bean>
-		-->
+		
 		
 		<bean id="BucketsDAO"
 			class="US.CPS.dao.impl.BucketsDAO">
 			<property name="sessionFactory">
 				<ref bean="sessionFactory" />
 			</property>
-		</bean></beans>
+		</bean>
+		-->
+		</beans>
