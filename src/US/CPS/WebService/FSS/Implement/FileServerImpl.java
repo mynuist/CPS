@@ -101,7 +101,7 @@ public class FileServerImpl implements FileServer{
 		    	//output to log file־
 		    }
 		
-		return 0;
+		return ret.getStatusCode();
 	}
 
 	@Override

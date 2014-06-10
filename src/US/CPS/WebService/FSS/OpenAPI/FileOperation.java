@@ -7,8 +7,8 @@ import US.CPS.entity.userinfo.Userinfo;
 
 public interface FileOperation {
 
-	int UploadFile(File file, int fileType , Integer fileId);// 1 doc; 2 pdf; ÔİÊ±Á½ÖÖ ,·µ»Ø0ÎªÕıÈ·£¬ÆäËûÎª´íÎó´úÂë
-	int DownLoadFile(Userinfo userinfo,int fileId);//·µ»Ø0ÎªÕıÈ·£¬ÆäËûÎª´íÎó´úÂë
-	int QueryFileInfo(int fileId, Documents  fileInfo); // ·µ»Ø0ÎªÕıÈ·£¬ÆäËûÎª´íÎó´úÂë,
+	int UploadFile(File file, int fileType , Integer fileId);// è¿”å›200ä¸ºæˆåŠŸ
+	String DownLoadFile(Userinfo userinfo,int fileId);// è¿”å› ä¸‹è½½åœ°å€
+	int QueryFileInfo(int fileId, Documents  fileInfo); // ç»“æœå­˜æ”¾åœ¨fileInfoã€‚
 
 }

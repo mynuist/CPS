@@ -22,7 +22,7 @@ public class FileOperationImpl implements FileOperation{
 		// TODO Auto-generated method stub
 		
 		
-    	//»ñÈ¡·þÎñÀàµÄ¶ÔÏó²¢ÇÒ´¦Àí
+    	//ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½ï¿½Ò´ï¿½ï¿½ï¿½
     	
 		fSSWS.UploadFile(file, fileType, fileId);
 		
@@ -30,12 +30,11 @@ public class FileOperationImpl implements FileOperation{
 	}
 
 	@Override
-	public int DownLoadFile(Userinfo userinfo, int fileId) {
+	public String DownLoadFile(Userinfo userinfo, int fileId) {
 		// TODO Auto-generated method stub
 		
-		fSSWS.DownLoadFile(userinfo, fileId);
+		return fSSWS.DownLoadFile(userinfo, fileId);
 		
-		return 0;
 	}
 
 	@Override
