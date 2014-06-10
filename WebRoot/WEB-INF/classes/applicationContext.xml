@@ -77,7 +77,9 @@
 				<value>
 					US/CPS/entity/university/University.hbm.xml
 				</value>
-				<value>US/CPS/entity/major/Major.hbm.xml</value></list>
+				<value>US/CPS/entity/major/Major.hbm.xml</value>
+				<value>US/CPS/entity/document/Documents.hbm.xml</value>
+				<value>US/CPS/entity/buckets/Buckets.hbm.xml</value></list>
 		</property>
 	</bean>
 		<!-- 
@@ -160,5 +162,18 @@
 			<ref bean="sessionFactory" />
 		</property>
 	</bean>
-	 -->
-	</beans>
+	 
+		<bean id="DocumentsDAO"
+			class="US.CPS.dao.impl.DocumentsDAO">
+			<property name="sessionFactory">
+				<ref bean="sessionFactory" />
+			</property>
+		</bean>
+		-->
+		
+		<bean id="BucketsDAO"
+			class="US.CPS.dao.impl.BucketsDAO">
+			<property name="sessionFactory">
+				<ref bean="sessionFactory" />
+			</property>
+		</bean></beans>

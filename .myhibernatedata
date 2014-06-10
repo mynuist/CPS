@@ -1,5 +1,5 @@
 #MyEclipse Hibernate Properties
-#Tue Nov 26 14:31:36 CST 2013
+#Tue Jun 10 11:34:43 CST 2014
 sessionFactoryName=
 genBasicCompId=false
 profile=
@@ -16,7 +16,7 @@ libInstallFolder=WebRoot/WEB-INF/lib
 addLibs2Project=true
 genVersionTag=false
 sessionFactoryId=sessionFactory
-basePersistenceClass=
+basePersistenceClass=AbstractBucket
 genAnnotations=false
 reSettingsFile=
 configFile=/CPS/src/applicationContext.xml

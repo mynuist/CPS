@@ -5,14 +5,14 @@ import java.util.List;
 import javax.jws.WebParam;
 import javax.jws.WebService;
 
-import US.CPS.Objects.File.FileInfo;
+import US.CPS.entity.document.Documents;
 import US.CPS.entity.userinfo.Userinfo;
 @WebService
 public interface FileServer {
 	   String sayHi(@WebParam(name="text")String text);
     
-	   int UploadFile(@WebParam(name="file")File file, @WebParam(name="fileType")int fileType , @WebParam(name="fileId")Integer fileId);// 1 doc; 2 pdf; ÔÝÊ±Á½ÖÖ ,·µ»Ø0ÎªÕýÈ·£¬ÆäËûÎª´íÎó´úÂë
-	   int DownLoadFile(@WebParam(name="userinfo")Userinfo userinfo,@WebParam(name="fileId")int fileId);//·µ»Ø0ÎªÕýÈ·£¬ÆäËûÎª´íÎó´úÂë
-	   int QueryFileInfo(@WebParam(name="fileId")int fileId,@WebParam(name="fileInfo")FileInfo  fileInfo); // ·µ»Ø0ÎªÕýÈ·£¬ÆäËûÎª´íÎó´úÂë,
+	   int UploadFile(@WebParam(name="file")File file, @WebParam(name="fileType")int fileType , @WebParam(name="fileId")Integer fileId);// 1 doc; 2 pdf; ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ ,ï¿½ï¿½ï¿½ï¿½0Îªï¿½ï¿½È·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	   String DownLoadFile(@WebParam(name="userinfo")Userinfo userinfo,@WebParam(name="fileId")long fileId);//return the download url
+	   int QueryFileInfo(@WebParam(name="fileId")long fileId,@WebParam(name="fileInfo")Documents  fileInfo); // ï¿½ï¿½ï¿½ï¿½0Îªï¿½ï¿½È·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,
 	   
 }

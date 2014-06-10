@@ -10,9 +10,9 @@ import javax.servlet.http.HttpServletRequest;
 import org.apache.struts2.interceptor.ServletRequestAware;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import US.CPS.BusinessLayer.Services.IAccountService;
 import US.CPS.entity.account.Account;
 import US.CPS.entity.userinfo.Userinfo;
-import US.CPS.service.IAccountService;
 
 import com.opensymphony.xwork2.ActionSupport;
 
